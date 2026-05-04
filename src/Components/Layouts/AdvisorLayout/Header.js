@@ -1,0 +1,291 @@
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import DLogo from '../../../assets/images/DashboardImgs/dashboard-logo.png';
+import CLipList from '../../../assets/images/DashboardImgs/clipboard-list.png';
+import Group from '../../../assets/images/DashboardImgs/Group.png';
+import Bill from '../../../assets/images/DashboardImgs/bill.png';
+import Setting from '../../../assets/images/DashboardImgs/setting.png';
+import DashB from '../../../assets/images/DashboardImgs/dashb.png';
+import CLip from '../../../assets/images/DashboardImgs/clipboard.png';
+import history from '../../../Utils/history';
+import LogoWhite from '../../../assets/images/WizardImages/Horizontal.png';
+import Msg from '../../../assets/images/WizardImages/mail.png';
+import ShortLogo from '../../../assets/images/WizardImages/Logomark.png';
+import LinkdIn from '../../../assets/images/WizardImages/linkdin.png';
+import EmailYes from '../../../assets/images/WizardImages/EmailYes.png';
+import EmailIcon from '../../../assets/images/WizardImages/email-icon.png';
+import EditPen from '../../../assets/images/WizardImages/edit-2.png';
+import Welldone from '../../../assets/images/WizardImages/WellDone.png';
+import Search from '../../../assets/images/WizardImages/search.png';
+// css
+import './main.css';
+import logo from '../../../assets/images/AuthImages/logo-new.png';
+import myprofile from '../../../assets/images/myprofile.png';
+import ApiRequest from '../../../Services/ApiRequest';
+import { destroySession } from '../../../Helpers/Functions';
+import { connect, useSelector } from 'react-redux';
+import useFetchData from '../../../hooks/useFetchData';
+import { data } from 'jquery';
+
+function Header() {
+  // const user = useSelector((state) => state.user);
+  // const profileImage = useSelector((state) => state.profileImage);
+
+  const { data: profileData, isLoading } = useFetchData({
+    queryKey: ['UserBasicInfo111', 'Header11'],
+    url: '/api/get-dashboard',
+    // options: { refetchInterval: 6000 },
+  });
+  const logout = () => {
+    localStorage.clear();
+    destroySession();
+    history.push('/login');
+  };
+  const pathName = history.location.pathname;
+  const data = profileData?.data;
+  return (
+    <>
+      {/* <div className="container">
+                    <div className="row mar-width-0 header-nav">
+                        <div className="col-md-6 align-self-center">
+                            <Link to="/" className="brand-logo">
+                                <img src={logo} className="d-logo" alt="" />
+                            </Link>
+                        </div>
+                        <div className="col-md-6 text-right p-2">
+                            <ul className="ms-auto mb-0">
+                                <li className="nav-item dropdown user-dropdown d-inline-block">
+                                    <a href="#" className="nav-link nav-bell-icon active">
+                                        Home
+                                    </a>
+                                </li>
+                                <li className="nav-item dropdown user-dropdown d-inline-block">
+                                    <a  href="#" className="nav-link nav-bell-icon">
+                                        Advisor Directory
+                                    </a>
+                                </li>
+                                {/* <li className="nav-item dropdown user-dropdown d-inline-block">
+                                    <a  href="#" className="nav-link nav-bell-icon">
+                                        Resources
+                                    </a>
+                                </li> }
+                                <li className="nav-item dropdown user-dropdown d-inline-block">
+                                    <Link to="/" className="nav-link dropdown-toggle"
+                                        id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                    
+                                        <img src="" className="sidebar-icon-" alt="" />  <span>kristina</span>
+                                    </Link>
+
+                                    <ul className="dropdown-menu shadow-sm" aria-labelledby="navbarDropdownMenuLink">
+                                   
+                                    <li ><Link to="/" className="dropdown-item" onClick={() => this.logout()}>Logout</Link></li>
+                                </ul>
+                                    
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div> */}
+      <div>
+        <header className='header-sec'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <nav className='navbar navbar-expand-lg navbar-dark'>
+                  <a className='navbar-brand' href='/advisor/dashboard'>
+                    <img src={logo} className='img-fluid' alt='' />
+                  </a>
+                  <button
+                    className='navbar-toggler'
+                    type='button'
+                    data-toggle='collapse'
+                    data-target='#collapsibleNavbar'
+                  >
+                    <span className='navbar-toggler-icon'></span>
+                  </button>
+                  <div className='collapse navbar-collapse' id='collapsibleNavbar'>
+                    <ul className='navbar-nav ml-auto' id='myNavbar'>
+                      <li className='nav-item'>
+                        <NavLink
+                          to='/advisor/dashboard'
+                          className={(isActive) =>
+                            `nav-link ${isActive ? 'active' : ''}`
+                          }
+                        >
+                          Home
+                        </NavLink>
+                      </li>
+
+                      <li className='nav-item'>
+                        <a className='nav-link' target="_blank" href='https://join.slack.com/t/candooradvisors/shared_invite/zt-1n5q8fa3m-j2hAWpFEsq91Ponm9jMKYw'>
+                          Community
+                        </a>
+                      </li>
+                      <li className='nav-item dropdown profiledrop'>
+                        <a
+                          className='nav-link dropdown-toggle'
+                          href='#'
+                          id='navbardrop'
+                          data-toggle='dropdown'
+                        >
+                          <img
+                            style={{
+                              'objectFit': 'cover'
+                            }}
+                            src={
+                              !!data?.advisorData?.profile_goal
+                                ? process.env.REACT_APP_API_URL + `/${data?.advisorData?.profile_goal}`
+                                : myprofile
+                            }
+                            className="img-fluid"
+                            alt=""
+                          />
+                          <span>
+                            {data?.userData?.firstname}{' '}
+                            {data?.userData?.lastname}
+                          </span>
+                        </a>
+                        <div className='dropdown-menu'>
+                          <a
+                            onClick={(e) =>
+                              history.push('/advisor/advisorProfileedit')
+                            }
+                            className='dropdown-item'
+                            href='#'
+                          >
+                            <svg
+                              width='16'
+                              height='16'
+                              viewBox='0 0 16 16'
+                              fill='none'
+                              xmlns='http://www.w3.org/2000/svg'
+                            >
+                              <path
+                                d='M8.00003 13.8752C6.21603 13.8752 4.43363 13.8752 2.64963 13.8752C2.27843 13.8752 1.90723 13.8816 1.53603 13.872C0.870434 13.856 0.332834 13.408 0.192034 12.7568C0.171234 12.6624 0.161634 12.5648 0.161634 12.4688C0.160034 9.48963 0.160034 6.51043 0.160034 3.53123C0.160034 2.75203 0.785634 2.12323 1.56323 2.12323C5.85443 2.12163 10.144 2.12163 14.4352 2.12323C15.2128 2.12323 15.8384 2.75203 15.8384 3.53123C15.84 6.51043 15.84 9.48963 15.8384 12.4688C15.8384 13.2304 15.2432 13.8448 14.4832 13.8736C14.3568 13.8784 14.2304 13.8768 14.1056 13.8768C12.3344 13.8768 10.5648 13.8768 8.79363 13.8768C8.52963 13.8752 8.26403 13.8752 8.00003 13.8752ZM9.91523 12.9008C9.95523 12.9008 9.99043 12.9008 10.0256 12.9008C10.5488 12.9008 11.072 12.9008 11.5952 12.9008C12.5328 12.9008 13.4688 12.9008 14.4064 12.9008C14.624 12.9008 14.792 12.7808 14.8432 12.5872C14.8576 12.5328 14.8592 12.472 14.8592 12.4144C14.8592 9.47203 14.8592 6.52803 14.8592 3.58563C14.8592 3.55043 14.8592 3.51523 14.856 3.47843C14.8384 3.29283 14.688 3.13283 14.5024 3.10723C14.4384 3.09923 14.3728 3.09763 14.3088 3.09763C10.1024 3.09763 5.89603 3.09763 1.68963 3.09763C1.65443 3.09763 1.61923 3.09763 1.58243 3.09763C1.30723 3.10883 1.13763 3.27843 1.13763 3.55363C1.13763 6.25443 1.13763 8.95523 1.13763 11.656C1.13763 11.6816 1.14243 11.7072 1.14723 11.76C1.17123 11.704 1.18563 11.6752 1.19683 11.6464C1.68323 10.5184 2.49443 9.72483 3.64323 9.28803C4.45763 8.97923 5.30243 8.92163 6.16163 9.04003C7.09283 9.16803 7.91523 9.53603 8.60003 10.1872C9.37283 10.9232 9.82563 11.8176 9.91523 12.9008ZM8.92003 12.872C8.92003 12.8256 8.92323 12.8032 8.92003 12.7808C8.91203 12.7232 8.90563 12.6656 8.89283 12.608C8.66723 11.584 8.08323 10.832 7.15523 10.3584C6.29123 9.91843 5.36803 9.85283 4.43843 10.0736C3.20483 10.3664 2.38083 11.1296 1.99523 12.3472C1.94243 12.5136 1.92163 12.6896 1.88483 12.8656C1.92483 12.8752 1.93923 12.8816 1.95523 12.8816C2.12323 12.888 2.28963 12.8992 2.45763 12.8992C4.50243 12.9008 6.54723 12.9008 8.59203 12.8992C8.70083 12.8992 8.80803 12.8816 8.92003 12.872Z'
+                                fill='#667085'
+                              />
+                              <path
+                                d='M3.104 6.41281C3.104 5.12801 4.1424 4.09121 5.4288 4.09281C6.7136 4.09441 7.7568 5.13761 7.7536 6.41601C7.7504 7.69761 6.704 8.73601 5.4208 8.73121C4.1392 8.72801 3.104 7.69121 3.104 6.41281ZM6.7728 6.41601C6.7744 5.67521 6.1744 5.07041 5.4352 5.06721C4.6896 5.06401 4.08 5.66721 4.0784 6.40801C4.0752 7.14721 4.688 7.75841 5.4288 7.75841C6.168 7.75681 6.7712 7.15361 6.7728 6.41601Z'
+                                fill='#667085'
+                              />
+                              <path
+                                d='M9.00317 5.0432C9.00317 4.72 9.00317 4.4048 9.00317 4.0832C10.624 4.0832 12.24 4.0832 13.864 4.0832C13.864 4.4032 13.864 4.72 13.864 5.0432C12.2448 5.0432 10.6288 5.0432 9.00317 5.0432Z'
+                                fill='#667085'
+                              />
+                              <path
+                                d='M9.00464 7.00324C9.00464 6.67844 9.00464 6.36324 9.00464 6.04164C10.6254 6.04164 12.2414 6.04164 13.8654 6.04164C13.8654 6.36164 13.8654 6.67844 13.8654 7.00324C12.243 7.00324 10.627 7.00324 9.00464 7.00324Z'
+                                fill='#667085'
+                              />
+                              <path
+                                d='M9.00464 8.96322C9.00464 8.64162 9.00464 8.32641 9.00464 8.0032C9.98384 8.0032 10.9646 8.0032 11.9486 8.0032C11.9486 8.32321 11.9486 8.64162 11.9486 8.96322C10.9646 8.96322 9.98704 8.96322 9.00464 8.96322Z'
+                                fill='#667085'
+                              />
+                            </svg>
+                            My Profile
+                          </a>
+                          <a onClick={(e) =>
+                            history.push('/advisor/setting')
+                          } className='dropdown-item' href='#'>
+                            <svg
+                              width='16'
+                              height='16'
+                              viewBox='0 0 16 16'
+                              fill='none'
+                              xmlns='http://www.w3.org/2000/svg'
+                            >
+                              <path
+                                d='M7.99996 10C9.10453 10 9.99996 9.10457 9.99996 8C9.99996 6.89543 9.10453 6 7.99996 6C6.89539 6 5.99996 6.89543 5.99996 8C5.99996 9.10457 6.89539 10 7.99996 10Z'
+                                stroke='#667085'
+                                strokeWidth='1.5'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                              />
+                              <path
+                                d='M12.9333 10C12.8445 10.2011 12.8181 10.4241 12.8573 10.6404C12.8965 10.8567 12.9996 11.0562 13.1533 11.2133L13.1933 11.2533C13.3173 11.3772 13.4156 11.5242 13.4827 11.6861C13.5498 11.8479 13.5843 12.0214 13.5843 12.1967C13.5843 12.3719 13.5498 12.5454 13.4827 12.7073C13.4156 12.8691 13.3173 13.0162 13.1933 13.14C13.0695 13.264 12.9224 13.3623 12.7605 13.4294C12.5987 13.4965 12.4252 13.531 12.25 13.531C12.0747 13.531 11.9012 13.4965 11.7394 13.4294C11.5775 13.3623 11.4305 13.264 11.3066 13.14L11.2666 13.1C11.1095 12.9463 10.9099 12.8432 10.6937 12.804C10.4774 12.7648 10.2544 12.7913 10.0533 12.88C9.85611 12.9645 9.68795 13.1048 9.5695 13.2837C9.45105 13.4625 9.38748 13.6721 9.38663 13.8867V14C9.38663 14.3536 9.24615 14.6928 8.9961 14.9428C8.74605 15.1929 8.40691 15.3333 8.05329 15.3333C7.69967 15.3333 7.36053 15.1929 7.11048 14.9428C6.86043 14.6928 6.71996 14.3536 6.71996 14V13.94C6.7148 13.7193 6.64337 13.5053 6.51497 13.3258C6.38656 13.1463 6.20712 13.0095 5.99996 12.9333C5.79888 12.8446 5.57583 12.8181 5.35957 12.8573C5.1433 12.8965 4.94375 12.9996 4.78663 13.1533L4.74663 13.1933C4.62279 13.3173 4.47574 13.4156 4.31388 13.4827C4.15202 13.5498 3.97851 13.5844 3.80329 13.5844C3.62807 13.5844 3.45457 13.5498 3.29271 13.4827C3.13084 13.4156 2.98379 13.3173 2.85996 13.1933C2.73599 13.0695 2.63765 12.9224 2.57055 12.7606C2.50345 12.5987 2.46891 12.4252 2.46891 12.25C2.46891 12.0748 2.50345 11.9013 2.57055 11.7394C2.63765 11.5775 2.73599 11.4305 2.85996 11.3067L2.89996 11.2667C3.05365 11.1095 3.15675 10.91 3.19596 10.6937C3.23517 10.4775 3.2087 10.2544 3.11996 10.0533C3.03545 9.85615 2.89513 9.68799 2.71627 9.56954C2.53741 9.45109 2.32782 9.38752 2.11329 9.38667H1.99996C1.64634 9.38667 1.3072 9.24619 1.05715 8.99614C0.807102 8.74609 0.666626 8.40695 0.666626 8.05333C0.666626 7.69971 0.807102 7.36057 1.05715 7.11052C1.3072 6.86047 1.64634 6.72 1.99996 6.72H2.05996C2.28062 6.71484 2.49463 6.64341 2.67416 6.51501C2.85369 6.3866 2.99044 6.20716 3.06663 6C3.15537 5.79892 3.18184 5.57587 3.14263 5.35961C3.10342 5.14334 3.00032 4.94379 2.84663 4.78667L2.80663 4.74667C2.68266 4.62283 2.58431 4.47578 2.51721 4.31392C2.45011 4.15206 2.41558 3.97855 2.41558 3.80333C2.41558 3.62811 2.45011 3.45461 2.51721 3.29275C2.58431 3.13088 2.68266 2.98383 2.80663 2.86C2.93046 2.73603 3.07751 2.63769 3.23937 2.57059C3.40124 2.50349 3.57474 2.46895 3.74996 2.46895C3.92518 2.46895 4.09868 2.50349 4.26055 2.57059C4.42241 2.63769 4.56946 2.73603 4.69329 2.86L4.73329 2.9C4.89041 3.05369 5.08997 3.15679 5.30623 3.196C5.5225 3.23521 5.74555 3.20874 5.94663 3.12H5.99996C6.19714 3.03549 6.3653 2.89517 6.48375 2.71631C6.6022 2.53745 6.66577 2.32786 6.66663 2.11333V2C6.66663 1.64638 6.8071 1.30724 7.05715 1.05719C7.3072 0.807142 7.64634 0.666666 7.99996 0.666666C8.35358 0.666666 8.69272 0.807142 8.94277 1.05719C9.19282 1.30724 9.33329 1.64638 9.33329 2V2.06C9.33415 2.27452 9.39771 2.48412 9.51616 2.66298C9.63461 2.84184 9.80278 2.98216 9.99996 3.06667C10.201 3.15541 10.4241 3.18188 10.6404 3.14267C10.8566 3.10346 11.0562 3.00036 11.2133 2.84667L11.2533 2.80667C11.3771 2.6827 11.5242 2.58435 11.686 2.51725C11.8479 2.45015 12.0214 2.41562 12.1966 2.41562C12.3718 2.41562 12.5453 2.45015 12.7072 2.51725C12.8691 2.58435 13.0161 2.6827 13.14 2.80667C13.2639 2.9305 13.3623 3.07755 13.4294 3.23941C13.4965 3.40128 13.531 3.57478 13.531 3.75C13.531 3.92522 13.4965 4.09872 13.4294 4.26059C13.3623 4.42245 13.2639 4.5695 13.14 4.69333L13.1 4.73333C12.9463 4.89045 12.8432 5.09001 12.804 5.30627C12.7647 5.52254 12.7912 5.74559 12.88 5.94667V6C12.9645 6.19718 13.1048 6.36534 13.2836 6.48379C13.4625 6.60224 13.6721 6.66581 13.8866 6.66667H14C14.3536 6.66667 14.6927 6.80714 14.9428 7.05719C15.1928 7.30724 15.3333 7.64638 15.3333 8C15.3333 8.35362 15.1928 8.69276 14.9428 8.94281C14.6927 9.19286 14.3536 9.33333 14 9.33333H13.94C13.7254 9.33419 13.5158 9.39775 13.337 9.5162C13.1581 9.63465 13.0178 9.80282 12.9333 10Z'
+                                stroke='#667085'
+                                strokeWidth='1.5'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                              />
+                            </svg>
+                            Settings
+                          </a>
+
+                          {/* <a className='dropdown-item' href='#'>
+                            <svg
+                              width='16'
+                              height='16'
+                              viewBox='0 0 16 16'
+                              fill='none'
+                              xmlns='http://www.w3.org/2000/svg'
+                            >
+                              <path
+                                d='M8.00004 14.6667C11.6819 14.6667 14.6667 11.6819 14.6667 8C14.6667 4.3181 11.6819 1.33333 8.00004 1.33333C4.31814 1.33333 1.33337 4.3181 1.33337 8C1.33337 11.6819 4.31814 14.6667 8.00004 14.6667Z'
+                                stroke='#667085'
+                                strokeWidth='2'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                              />
+                              <path
+                                d='M6.06006 6C6.21679 5.55444 6.52616 5.17874 6.93336 4.93942C7.34056 4.7001 7.81932 4.61262 8.28484 4.69247C8.75036 4.77232 9.1726 5.01435 9.47678 5.37568C9.78095 5.73702 9.94743 6.19435 9.94672 6.66667C9.94672 8 7.94673 8.66667 7.94673 8.66667'
+                                stroke='#667085'
+                                strokeWidth='2'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                              />
+                              <path
+                                d='M8 11.3333H8.00667'
+                                stroke='#667085'
+                                strokeWidth='2'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                              />
+                            </svg>
+                            Share Feedback
+                          </a> */}
+                          <a
+                            className='dropdown-item logout'
+                            href='#'
+                            onClick={() => logout()}
+                          >
+                            <svg
+                              width='14'
+                              height='14'
+                              viewBox='0 0 14 14'
+                              fill='none'
+                              xmlns='http://www.w3.org/2000/svg'
+                            >
+                              <path
+                                d='M5 13H2.33333C1.97971 13 1.64057 12.8595 1.39052 12.6095C1.14048 12.3594 1 12.0203 1 11.6667V2.33333C1 1.97971 1.14048 1.64057 1.39052 1.39052C1.64057 1.14048 1.97971 1 2.33333 1H5M9.66667 10.3333L13 7M13 7L9.66667 3.66667M13 7H5'
+                                stroke='#667085'
+                                strokeWidth='1.5'
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                              />
+                            </svg>
+                            Log Out
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </>
+  );
+}
+
+const mapStateToProps = (state) => {
+  return {
+    user: state.user,
+    profileImage: state.profileImage,
+  };
+};
+
+export default connect(mapStateToProps)(Header);

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Candoor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">   
+</head>
+<body>
+
+
+<header class="header-sec">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-fluid" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto" id="myNavbar">
+        
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Advisors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#">Community</a>
+        </li> 
+        <li class="nav-item dropdown profiledrop">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+             <img src="assets/images/profile.png" class="img-fluid" alt=""><span>Kristina</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">View Profile</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+
+      </ul>
+    </div>  
+    </nav>
+    </div>
+    </div>
+    </div>
+</header>
+
+<section class="topbg profilebg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="topbg-left">
+          <h2>Complete Your Profile <img src="assets/images/edit.png" class="img-fluid" alt=""></h2>
+          <p>Expected Time to Completion: 4 min.</p>
+          <h5>Not sure what to write? Check out these example profiles (<a href="#">1</a>, <a href="#">2</a>, <a href="#">3</a>, <a href="#">4</a>) for inspiration!</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="profile-onboarding">
+  <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+        <div class="profile-onboarding-edit form-design">
+          <form>
+            <div class="row">
+                <div class="col-md-12">
+            <div class="form-group">
+              <label>Headline <span class="label-star">*</span></label>
+              <input type="text" class="form-control" placeholder="Co-Founder, Candoor | Harvard MBA '22 | ex-Uber, Morgan Stanley">
+            </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <div class="form-group inputDnD">
+                <label>Profile Photo <span class="label-star">*</span></label> 
+                <div class="drag-sec">
+                <div class="dragimg">
+                  <img src="assets/images/myprofile2.png" class="img-fluid" alt="">
+                </div>  
+                <div class="dragdiv">                                      
+                <input type="file" class="form-control-file text-primary font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag &amp; Drop here">
+                <img src="assets/images/upload.png" class="img-fluid" alt="">
+                <h4><a href="#">Click to replace</a> or drag and drop <span>SVG, PNG, JPG or GIF</span></h4>
+                </div>
+                </div>
+                </div>
+                </div>
+              </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                      <label>Tags <span class="label-star">*</span></label>
+                      <div class="careerlabel">If you had to choose 5 words that describe your career journey, what would they be? Add up to 5 profile tags (e.g. fintech, growth equity, entrepreneurship, female, first-generation, Latinx) so Advisees can search for you in our Directory.</div>
+                     <input type="text" class="form-control" placeholder="Type here...">
+                    </div>
+                   </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                      <label>About Me <span class="label-star">*</span></label>
+                      <div class="careerlabel">Your bio, written in the first-person. Tell Advisees who you are and what you’re passionate about!</div>
+                     <textarea class="form-control" rows="4" id="comment" placeholder="Type here..."></textarea>
+                      <div class="textlimit">500/500 characters remaining</div>
+                    </div>
+                   </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                      <label>How I Can Help <span class="label-star">*</span></label>
+                      <div class="careerlabel">What are some unique insights and ways you can help Advisees?</div>
+                     <textarea class="form-control" rows="4" id="comment" placeholder="[initial_career_goals]"></textarea>
+                      <div class="textlimit">300/300 characters remaining</div>
+                    </div>
+                   </div>
+                  </div>
+                   <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group ondoarding-btn">
+                      <button type="submit" class="btn btn-info">Save and Publish</button>
+                    </div>
+                  </div>
+                </div>
+            
+          </form>
+        </div>
+     </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

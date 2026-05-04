@@ -1,0 +1,1060 @@
+@media all and (min-width: 320px) and (max-width: 991px) {
+button.navbar-toggler {
+    padding: 0px !important;
+    position: relative;
+    box-shadow: none !important;
+    outline: none !important;
+}
+button.navbar-toggler span.navbar-toggler-icon {
+    background: none !important;
+    position: relative;
+    border-top: 2px solid #000;
+    height: 22px !important;
+}
+button.navbar-toggler span.navbar-toggler-icon::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+button.navbar-toggler span.navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+a.navbar-brand {
+    width: 120px;
+}
+.navbar.navbar-dark .navbar-collapse {
+    margin-top: 20px;
+}
+}
+
+
+
+/*320-991*/
+
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+.page-heading h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+.searchbox-select .form-group {
+    margin-bottom: 7px;
+}
+.advisors-displaylist .advisors-display-img {
+    position: static;
+    margin: 0px auto 20px;
+}
+.advisors-displaylist {
+    padding: 20px 20px 20px 20px;
+    min-height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.advisors-display-desc h2 {
+    font-size: 20px;
+}
+.advisors-display-desc h2 span {
+    font-size: 16px;
+}
+.advisors-display-desc h5 {
+    font-size: 16px;
+}
+.advisors-display-desc p {
+    font-size: 14px;
+}
+.paginationdiv ul.pagination li.page-item.previous {
+    float: none;
+}
+.paginationdiv ul.pagination li.page-item.next {
+    float: none;
+}
+.request-viewed-card {
+    padding: 20px;
+}
+.request-viewed-card h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.request-viewed-card h6 {
+    font-size: 16px;
+    line-height: 24px;
+}
+.request-img .col-md-6 {
+    width: 50%;
+}
+.request-img img.img-fluid {
+    width: 110px;
+    height: 110px;
+}
+.request-img h5 {
+    font-size: 14px;
+}
+.request-group label {
+    font-size: 14px;
+}
+.request-group p {
+    font-size: 14px;
+}
+.myprofile-desc {
+    padding: 40px 20px;
+}
+.myprofile-desc h3 {
+    font-size: 24px;
+    line-height: 26px;
+}
+.myprofile-desc h3 span {
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 5px;
+}
+.myprofile-desc h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.myprofile-right {
+    padding: 30px 20px;
+}
+.homepage-sec h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.homepage-card {
+    margin-bottom: 15px;
+}
+.homepage-meetings h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 30px 20px 0px 20px;
+}
+.homepage-meetings ul.nav.nav-tabs {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.homepage-meetings ul.nav.nav-tabs li.nav-item a.nav-link {
+    padding: 0px 0px 11px 0px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.homepage-meetings .table-d .table thead tr th {
+    padding: 13px 20px;
+        min-width: 290px;
+}
+.homepage-meetings .table-d .table tbody tr td {
+    padding: 15px 20px;
+}
+.homepage-events h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.homepage-eventsrow {
+    min-height: auto;
+    padding-left: 0px;
+    margin-bottom: 30px;
+}
+.homepage-eventsimg {
+    width: 100%;
+    position: static;
+    margin-bottom: 20px;
+}
+.homepager-esources-sec {
+    padding: 30px 20px;
+}
+.topbg h2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.topbg.profilebg h5 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.form-design .form-group label {
+    font-size: 14px;
+}
+.drag-sec {
+    padding-left: 0px;
+}
+.dragimg {
+    position: static;
+    margin: 0px auto 20px;
+}
+.stepinner-div h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.video-part {
+    padding-left: 22px;
+}
+.video-part h3 {
+    font-size: 24px;
+    line-height: 34px;
+}
+.video-sec {
+    margin-bottom: 35px;
+}
+.myprofile-d h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.myprofile-d p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.myprofile-list p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.myprofile-work span {
+    font-size: 14px;
+}
+ul.myjourney li {
+    padding-left: 45px;
+}
+.myjourney-list .institutionlogo {
+    position: static;
+    margin-bottom: 10px;
+}
+.myjourney-list {
+    padding-left: 0px;
+    min-height: 50px;
+}
+.myjourney-desc h4 {
+    font-size: 16px;
+    line-height: 24px;
+}
+.myjourney-desc h5 {
+    font-size: 15px;
+}
+.myjourney-desc h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.resources-bg h2 {
+    font-size: 28px;
+    line-height: 30px;
+}
+.resources-bg p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.resources-bg .booking-searchbox {
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.resources-card {
+    margin-bottom: 30px;
+}
+.resources-desc h2 {
+    font-size: 20px;
+}
+.resources-desc p {
+    font-size: 14px;
+    line-height: 24px;
+    min-height: auto;
+}
+.resources-bg {
+    padding: 45px 0px 337px;
+}
+.resources-single {
+    padding: 40px 0px;
+}
+.single-desc-top h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.single-desc-top p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px auto 25px;
+}
+.single-desc-top {
+    padding-bottom: 40px;
+}
+.resourcessingle-desc-bottom {
+    padding: 30px 0px 0px 0px;
+}
+.resourcessingle-desc-bottom h5 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.resourcessingle-desc-bottom h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 35px;
+    margin-bottom: 15px;
+}
+.resourcessingle-desc-bottom p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.resources-mess h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.resources-mess span {
+    font-size: 14px;
+}
+.resourcessingle-desc-bottom ul li {
+    font-size: 14px;
+    line-height: 24px;
+}
+.resources-mess-gray {
+    padding: 20px;
+}
+.resources-mess-gray h2 {
+    padding: 0px !important;
+}
+.resources-by ul {
+    margin: 15px 0px 0px 0px;
+    position: static;
+}
+.resources-by h5 {
+    margin: 0px !important;
+}
+.resources-by ul li {
+    margin: 0px 4px 7px 0px;
+}
+.settings-page-heading h2 {
+    font-size: 24px;
+}
+.settings-page-heading p {
+    font-size: 14px;
+}
+.settings-row {
+    padding-top: 4px;
+}
+.settings-tab {
+    padding-right: 0px;
+    padding-bottom: 24px;
+}
+.meeting-heading h2 {
+    font-size: 24px;
+    line-height: 38px;
+}
+.preferencesrow .input-group {
+    margin-bottom: 13px;
+}
+.delete-icon {
+    margin-top: 0px;
+}
+.preferencesbtn a.btn.btn-info {
+    font-size: 13px;
+}
+.preferencesbtn a.btn.btn-info .fa-angle-left {
+    display: none;
+}
+.myprofile-left-btn .btn.btn-info {
+    margin-bottom: 7px;
+}
+.switchbox-group {
+    width: auto;
+}
+.application-reviewer-box {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.application-reviewer-box h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.application-reviewer-list {
+    display: block;
+        margin-bottom: 10px;
+}
+.application-reviewer-list-left {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+}
+.application-reviewer-list-right {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+}
+.application-reviewer-list-right ul.myjourney li {
+    padding-left: 45px;
+}
+.application-reviewer-btn .col-md-4 {
+    margin-bottom: 10px;
+}
+.forgot-password-sec-left {
+    width: auto;
+    margin: 30px auto;
+}
+.forgot-password-sec-right {
+    width: auto;
+    margin: 40px auto;
+}
+.forgot-password-sec-left h3 {
+    font-size: 24px;
+}
+.messages-file-add {
+    min-width: auto;
+}
+.chatlist-right .messages-chat {
+    min-width: auto;
+}
+.messages-chat-gray p {
+    font-size: 14px;
+}
+.headingsec h2 {
+    font-size: 24px;
+}
+.headingsec-right {
+    text-align: left;
+}
+.searchbox .form-group {
+    margin-bottom: 10px;
+}
+.table-d .table thead tr th {
+    min-width: 220px;
+}
+.request-left {
+    padding: 20px;
+}
+.request-meeting-btn {
+    margin: 0px 0px 20px 0px;
+    display: block;
+    overflow: hidden;
+}
+.request-meeting-btn .btn.btn-info {
+    margin: 0px 0px 10px 0px;
+}
+.request-left h3 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.request-meeting-success {
+    padding: 20px;
+}
+.share-feedback-sec {
+    padding: 50px 0px 50px;
+}
+.share-feedback-left {
+    padding-right: 0px;
+}
+.share-feedback-left h2 {
+    font-size: 26px;
+    line-height: 35px;
+}
+.share-feedback-form {
+    margin-top: 30px;
+}
+.mainfooter {
+    padding: 50px 0px 0px 0px;
+}
+.footer-logo a {
+    width: 120px;
+}
+.footer-logo p {
+    font-size: 14px;
+}
+.copyrightrow {
+    padding: 20px 0px;
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+}
+.footerlink ul {
+    text-align: center;
+}
+.footerlink ul li a {
+    font-size: 14px;
+    margin: 0px 5px 0px 5px;
+}
+.modal-d .modal-header h4.modal-title {
+    font-size: 22px;
+    line-height: 28px;
+}
+.modal-d .form-group label {
+    font-size: 14px;
+}
+.modal-footer-btn .btn.btn-info {
+    margin-bottom: 10px;
+}
+.modal-d ul.nav-tabs li.nav-item {
+    width: 100%;
+}
+.modal-d .modal-header h4.modal-title img.img-fluid {
+    width: 29px;
+}
+.modal-d .form-group {
+    margin-bottom: 15px;
+    padding: 0px !important;
+}
+.row.proposetoprow {
+    display: none;
+}
+label.propose-mobile {
+    display: block;
+    margin-bottom: 5px !important;
+}
+.topbg-tight .progress {
+    float: none;
+    margin: 0px auto 20px;
+}
+.check-sec {
+    display: block;
+    padding: 40px 0px 0px 0px;
+}
+.checklist-left {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+}
+.check-w {
+    width: 100%;
+    float: none;
+}
+.advisors-sec {
+    width: 100%;
+    padding: 25px 20px 0px 20px;
+}
+.checklist-left h2 {
+    font-size: 24px;
+}
+.checklist-d .checklisticon {
+    position: static;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.checklist-d label.radiolabel {
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 0px;
+    min-height: auto;
+    text-align: center;
+}
+.checklist-d label.radiolabel h3 {
+    padding-right: 0px;
+}
+.checklist-d label.radiolabel h3 span {
+    position: static;
+    font-size: 14px;
+    display: block;
+}
+.checklist-d input.form-field[type=radio] {
+    top: 10%;
+}
+.advisorsall {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+.leftdiv {
+    position: static;
+    padding: 30px;
+    width: 100%;
+}
+.rightdiv {
+    margin-left: 0px;
+}
+.leftdiv-logo {
+    margin-bottom: 35px;
+}
+.leftdiv-email {
+    margin-top: 40px;
+}
+.rightdiv h2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+}
+
+
+/*320-767*/
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+.settings-page-heading h2 {
+    font-size: 24px;
+}
+.settings-page-heading p {
+    font-size: 14px;
+}
+.settings-row {
+    padding-top: 4px;
+}
+.settings-tab {
+    padding-right: 0px;
+    padding-bottom: 24px;
+}
+.forgot-password-sec-right {
+    width: auto;
+    margin: 40px auto;
+}
+.forgot-password-sec-left {
+    width: auto;
+    margin: 40px auto;
+}
+.forgot-password-sec-left h3 {
+    font-size: 24px;
+}
+.advisorsall {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+}
+
+
+/*768-991*/
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+a.navbar-brand {
+    width: 120px;
+}
+.myprofile-desc {
+    padding: 40px 20px;
+}
+.myprofile-desc h3 {
+    font-size: 24px;
+    line-height: 26px;
+}
+.myprofile-desc h3 span {
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 5px;
+}
+.myprofile-desc h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.myprofile-right {
+    padding: 30px 20px;
+}
+.homepage-sec h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.homepage-card {
+    margin-bottom: 15px;
+}
+.homepage-meetings h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 30px 20px 0px 20px;
+}
+.homepage-meetings ul.nav.nav-tabs {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.homepage-meetings ul.nav.nav-tabs li.nav-item a.nav-link {
+    padding: 0px 0px 11px 0px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.homepage-meetings .table-d .table thead tr th {
+    padding: 13px 20px;
+        min-width: 290px;
+}
+.homepage-meetings .table-d .table tbody tr td {
+    padding: 15px 20px;
+}
+.homepage-events h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.homepage-eventsrow {
+    min-height: auto;
+    padding-left: 0px;
+    margin-bottom: 30px;
+}
+.homepage-eventsimg {
+    width: 100%;
+    position: static;
+    margin-bottom: 20px;
+}
+.homepager-esources-sec {
+    padding: 30px 20px;
+}
+.myprofile-left-btn .btn.btn-info {
+    margin-bottom: 7px;
+}
+.forgot-password-sec-right {
+    width: 400px;
+}
+.forgot-password-sec-right {
+    margin: 40px auto;
+}
+.forgot-password-sec-left {
+    margin: 40px auto;
+}
+.advisorsall {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+}
+
+
+/*992-1024*/
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+.page-heading h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+.searchbox-select .form-group {
+    margin-bottom: 7px;
+}
+.advisors-display-desc h2 {
+    font-size: 20px;
+}
+.advisors-display-desc h2 span {
+    font-size: 16px;
+}
+.advisors-display-desc h5 {
+    font-size: 16px;
+}
+.advisors-display-desc p {
+    font-size: 14px;
+}
+.topbg h2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.stepinner-div h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.video-part {
+    padding-left: 22px;
+}
+.video-part h3 {
+    font-size: 24px;
+    line-height: 34px;
+}
+.video-sec {
+    margin-bottom: 35px;
+}
+.resources-bg h2 {
+    font-size: 28px;
+    line-height: 30px;
+}
+.resources-bg p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.resources-bg .booking-searchbox {
+    padding: 0px;
+    margin-bottom: 30px;
+}
+.resources-card {
+    margin-bottom: 30px;
+}
+.resources-desc h2 {
+    font-size: 20px;
+}
+.resources-desc p {
+    font-size: 14px;
+    line-height: 24px;
+    min-height: auto;
+}
+.resources-bg {
+    min-height: 600px;
+}
+.resources-single {
+    padding: 40px 0px;
+}
+.single-desc-top h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.single-desc-top p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px auto 25px;
+}
+.single-desc-top {
+    padding-bottom: 40px;
+}
+.resourcessingle-desc-bottom {
+    padding: 30px 0px 0px 0px;
+}
+.resourcessingle-desc-bottom h5 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.resourcessingle-desc-bottom h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 35px;
+    margin-bottom: 15px;
+}
+.resourcessingle-desc-bottom p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.resources-mess h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+.resources-mess span {
+    font-size: 14px;
+}
+.resourcessingle-desc-bottom ul li {
+    font-size: 14px;
+    line-height: 24px;
+}
+.resources-mess-gray {
+    padding: 20px;
+}
+.resources-mess-gray h2 {
+    padding: 0px !important;
+}
+.resources-by ul {
+    margin: 15px 0px 0px 0px;
+    position: static;
+}
+.resources-by h5 {
+    margin: 0px !important;
+}
+.resources-by ul li {
+    margin: 0px 4px 7px 0px;
+}
+.meeting-heading h2 {
+    font-size: 24px;
+    line-height: 38px;
+}
+.application-reviewer-box {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.application-reviewer-box h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.application-reviewer-list {
+    display: block;
+        margin-bottom: 10px;
+}
+.application-reviewer-list-left {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+}
+.application-reviewer-list-right {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+}
+.application-reviewer-list-right ul.myjourney li {
+    padding-left: 45px;
+}
+.headingsec h2 {
+    font-size: 24px;
+}
+.table-d .table thead tr th {
+    min-width: 220px;
+}
+.request-left h3 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.share-feedback-left {
+    padding-right: 20px;
+}
+.share-feedback-left h2 {
+    font-size: 26px;
+}
+.footer-logo a {
+    width: 120px;
+}
+.footer-logo p {
+    font-size: 14px;
+}
+.check-sec {
+    display: block;
+    padding: 40px 0px 0px 0px;
+}
+.checklist-left {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+}
+.check-w {
+    width: 100%;
+    float: none;
+}
+.advisors-sec {
+    width: 100%;
+    padding: 25px 20px 0px 20px;
+}
+.checklist-left h2 {
+    font-size: 24px;
+}
+.checklist-d .checklisticon {
+    position: static;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.checklist-d label.radiolabel {
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 0px;
+    min-height: auto;
+    text-align: center;
+    display: block;
+}
+.checklist-d label.radiolabel h3 {
+    padding-right: 0px;
+}
+.checklist-d label.radiolabel h3 span {
+    position: static;
+    font-size: 14px;
+    display: block;
+}
+.checklist-d input.form-field[type=radio] {
+    top: 10%;
+}
+.leftdiv {
+    width: 300px;
+    padding: 30px;
+}
+.rightdiv {
+    margin-left: 300px;
+}
+.rightdiv h2 {
+    font-size: 22px;
+    line-height: 28px;
+}
+}
+
+
+/*768-1024*/
+
+
+@media all and (min-width: 1025px) and (max-width: 1199px) {
+a.navbar-brand {
+    width: 120px;
+}
+.page-heading h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+.myprofile-desc {
+    padding: 40px 20px;
+}
+.myprofile-desc h3 {
+    font-size: 24px;
+    line-height: 26px;
+}
+.myprofile-desc h3 span {
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 5px;
+}
+.myprofile-desc h6 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.myprofile-right {
+    padding: 30px 20px;
+}
+.homepage-sec h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.homepage-card {
+    margin-bottom: 15px;
+}
+.homepage-meetings h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 30px 20px 0px 20px;
+}
+.homepage-meetings ul.nav.nav-tabs {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.homepage-meetings ul.nav.nav-tabs li.nav-item a.nav-link {
+    padding: 0px 0px 11px 0px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.homepage-meetings .table-d .table thead tr th {
+    padding: 13px 20px;
+        min-width: 290px;
+}
+.homepage-meetings .table-d .table tbody tr td {
+    padding: 15px 20px;
+}
+.homepage-events h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.homepager-esources-sec {
+    padding: 30px 20px;
+}
+.resources-desc h2 {
+    font-size: 20px;
+}
+.resources-desc p {
+    font-size: 14px;
+    line-height: 24px;
+    min-height: auto;
+}
+.resources-bg h2 {
+    font-size: 38px;
+    line-height: 60px;
+}
+.resources-bg {
+    min-height: 600px;
+}
+.myprofile-left-btn .btn.btn-info {
+    margin-bottom: 7px;
+}
+.table-d .table thead tr th {
+    min-width: 220px;
+}
+.forgot-password-sec-right {
+    margin: 40px auto;
+}
+.forgot-password-sec-left {
+    margin: 40px auto;
+}
+.check-w {
+    width: 526px;
+    float: right;
+}
+.checklist-d label.radiolabel h3 {
+    font-size: 16px;
+    padding-right: 80px;
+}
+}
+
+
+/*1025-1199*/
+
+@media all and (min-width: 1200px) and (max-width: 1330px) {
+.myprofile-left-btn .btn.btn-info {
+    margin-bottom: 7px;
+}
+.table-d .table thead tr th {
+    min-width: 220px;
+}
+.check-w {
+    width: 626px;
+    float: right;
+}
+}
+
+
+/*1200-1280*/
+
+
+

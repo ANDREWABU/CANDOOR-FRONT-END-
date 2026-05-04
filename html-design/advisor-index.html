@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Candoor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">   
+</head>
+<body>
+
+
+<header class="header-sec">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="img-fluid" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto" id="myNavbar">
+        
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Advisors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="#">Community</a>
+        </li> 
+        <li class="nav-item dropdown profiledrop">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+             <img src="assets/images/profile.png" class="img-fluid" alt=""><span>Kristina</span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Dashboard</a>
+              <a class="dropdown-item" href="#">View Profile</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+
+      </ul>
+    </div>  
+    </nav>
+    </div>
+    </div>
+    </div>
+</header>
+
+<section class="topbg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="topbg-left">
+          <h2>Welcome, Firstname! <img src="assets/images/hand.png" class="img-fluid" alt=""></h2>
+          <p>You’re almost ready to meet with Advisees.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="topbg-tight">
+        <div class="progress yellow"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+            <div class="progress-value"><h5>Your Progress:</h5><h6>30%</h6></div>
+        </div>
+        <!-- <div class="topbg-tight">
+          <div class="progressbar">
+            <h5>Your Progress:</h5>
+            <h4>0%</h4>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="check-sec">
+ <!--  <div class="container">
+   <div class="row">
+    <div class="col-md-7"> -->      
+      <div class="checklist-left">
+        <div class="check-w">
+       <h2>Onboarding Checklist</h2>
+       <p>Complete the tasks below to start receiving meeting requests from Advisees.</p>
+       <ul>
+         <li>
+          <div class="checklist-d">           
+           <input type="radio" name="radioname" id="checklist1" class="form-field">
+           <label class="radiolabel" for="checklist1">
+            <img src="assets/images/checklist1.png" class="img-fluid checklisticon" alt="">
+            <h3>Complete Your Profile <span>(4 min.)</span></h3>
+            <p>Tell us about yourself! The more information you provide, the more relevant your Advisees will be.</p>
+            <a href="#" class="btn btn-info">Complete Profile<img src="assets/images/right-icon.png" class="img-fluid" alt=""></a>
+           </label>
+         </div>
+         </li>
+         <li>
+          <div class="checklist-d">           
+           <input type="radio" name="radioname" id="checklist2" class="form-field">
+           <label class="radiolabel" for="checklist2">
+            <img src="assets/images/checklist2.png" class="img-fluid checklisticon" alt="">
+            <h3>Watch our Orientation Video <span>(8 min.)</span></h3>
+            <p>Learn best practices for building relationships with our Advisors and making the most out of Candoor.</p>
+            <a href="#" class="btn btn-info">Watch Orientation Video<img src="assets/images/right-icon.png" class="img-fluid" alt=""></a>
+           </label>
+         </div>
+         </li>
+         <li>
+          <div class="checklist-d">           
+           <input type="radio" name="radioname" id="checklist4" class="form-field">
+           <label class="radiolabel" for="checklist4">
+            <img src="assets/images/checklist4.png" class="img-fluid checklisticon" alt="">
+            <h3>Set Your Meeting Preferences <span>(Optional)</span></h3>
+            <p>Candoor lets you pay it forward on your own time and terms. Set your capacity and tell Advisees how (and when) you can help!</p>
+            <a href="#" class="btn btn-info">Set Meeting Preferences<img src="assets/images/right-icon.png" class="img-fluid" alt=""></a>
+           </label>
+         </div>
+         </li>
+         <li>
+          <div class="checklist-d">           
+           <input type="radio" name="radioname" id="checklist3" class="form-field">
+           <label class="radiolabel" for="checklist3">
+            <img src="assets/images/checklist3.png" class="img-fluid checklisticon" alt="">
+            <h3>Join the Community <span>(Optional)</span></h3>
+            <p>Join our Slack workspace to meet other Advisors and be the first to hear about new resources and opportunities to level up your impact.</p>
+            <a href="#" class="btn btn-info">Join the Community<img src="assets/images/right-icon.png" class="img-fluid" alt=""></a>
+           </label>
+         </div>
+         </li>
+       </ul>
+      </div>
+    </div>
+      <div class="advisors-sec">
+        <h3>Join 50+ Advisors making an impact...</h3>
+        <div class="advisorsall">
+          <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors1.png" class="img-fluid" alt="">
+            <h5>Wadood</h5>
+            <h6>Program Management<span>Microsoft</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors2.png" class="img-fluid" alt="">
+            <h5>Shelby</h5>
+            <h6>Management Consulting<span>L.E.K. Consulting</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors3.png" class="img-fluid" alt="">
+            <h5>Nashae</h5>
+            <h6>Senior Analyst<span>Goldman Sachs</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors4.png" class="img-fluid" alt="">
+            <h5>Isa</h5>
+            <h6>Program Management<span>Dropbox</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors5.png" class="img-fluid" alt="">
+            <h5>Uma</h5>
+            <h6>Software Engineering<span>Microsoft</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors6.png" class="img-fluid" alt="">
+            <h5>Angel</h5>
+            <h6>Operations Management<span>Meta</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors7.png" class="img-fluid" alt="">
+            <h5>Kristina</h5>
+            <h6>Investment Banking<span>Morgan Stanley</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors1.png" class="img-fluid" alt="">
+            <h5>Wadood</h5>
+            <h6>Program Management<span>Microsoft</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors5.png" class="img-fluid" alt="">
+            <h5>Uma</h5>
+            <h6>Software Engineering<span>Microsoft</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors6.png" class="img-fluid" alt="">
+            <h5>Angel</h5>
+            <h6>Operations Management<span>Meta</span></h6>            
+          </div>
+        </div>
+        <div class="advisors-col">
+          <div class="advisors-card">
+            <img src="assets/images/advisors1.png" class="img-fluid" alt="">
+            <h5>Wadood</h5>
+            <h6>Program Management<span>Microsoft</span></h6>            
+          </div>
+        </div>
+
+
+        
+
+        </div>
+      </div>
+    <!-- </div>
+   </div>
+  </div> -->
+</section>
+
+
+
+
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
