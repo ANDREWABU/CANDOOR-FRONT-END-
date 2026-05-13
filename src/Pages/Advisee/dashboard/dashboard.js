@@ -131,7 +131,7 @@ function Dashboard() {
 	var nowunix = Math.floor(new Date().getTime() / 1000)
 	var endtimeunix = 0; var enddateonly = "";var endtimeonly = "";
 	var launchdayunix = Math.floor(new Date('12/20/2023').getTime() / 1000)
-	for(const meeting of data.meetingData) {
+	for(const meeting of (data.meetingData || [])) {
 		if(meeting.endtime) {
 			endtimeunix = Math.floor(new Date(meeting.endtime).getTime() / 1000)
 		}
